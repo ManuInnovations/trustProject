@@ -187,7 +187,7 @@ Intro
 ================================= */
 
 #intro{
-    height:635px;
+    height:100vh;
     width:100%;
     background-color: #529abb;
     background-position:center;
@@ -196,8 +196,6 @@ Intro
     text-align:center;
     position:relative;
 }
-
-
 
 .intro-text {
 	position:relative;
