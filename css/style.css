@@ -229,6 +229,12 @@ Intro
 	font-size: 24px;
 	text-align:center;
 	font-weight: 300;
+  font-family: 'Indie Flower', cursive;
+}
+
+.brand {
+  max-width: 70%;
+  margin: auto;
 }
 
 /* ================================
