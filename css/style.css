@@ -241,7 +241,9 @@ About
 	margin-bottom: 30px;
 }
 
-
+.about-text {
+  column-count: 2;
+}
 
 /* ================================
 Services
