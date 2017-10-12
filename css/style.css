@@ -259,7 +259,6 @@ Services
 	text-align: left;
 }
 
-
 .service .carousel-control{
 	background: none;
 }
@@ -312,8 +311,18 @@ Services
 
 
 /* ================================
-Contact
+Story
 ================================= */
+
+form {
+  max-width: 70%;
+  margin: auto;
+}
+
+.input-group {
+  width: 80%;
+  margin: auto;
+}
 
 /* ================================
 Bottom widget
