@@ -185,8 +185,11 @@ spacers
 
 #spacer1{
 	background-image: url(../img/spacer/1.jpg);
+	font-family: 'Indie Flower', cursive;
 }
 #spacer2{
+	font-family: 'Indie Flower', cursive;
+	background-image: url(../img/spacer/2.jpg);
 	background-image: url(../img/spacer/2.jpg);
 }
 
