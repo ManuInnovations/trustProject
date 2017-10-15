@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#client-form').bootstrapValidator({
+    $('#story-form').bootstrapValidator({
         //submitButtons: '#postForm',
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {
@@ -39,7 +39,13 @@ $(document).ready(function() {
                     }
                 }
             },
-
+            story: {
+              validators: {
+                notEmpty: {
+                  message: 'Please share your story in this section'
+                }
+              }
+            },
         }
     })
     .on('success.form.bv', function(e) {
@@ -53,8 +59,8 @@ $(document).ready(function() {
         var bv = $form.data('bootstrapValidator');
 
         // Use Ajax to submit form data
-        var url = 'https://script.google.com/macros/s/AKfycbyjtI8AS2C0eimoacKT1QrxM7aAHRB3HWfSI1dWJBaVZpc61UU/exec';
-        var redirectUrl = 'employers.html';
+        var url = 'https://docs.google.com/spreadsheets/d/1fS2THsjZ-tMnTTk9RyKCUsi6J2CKF6ZpYuOcs6mOUIM/edit?usp=sharing';
+        var redirectUrl = 'index.html';
 
         // show the loading
         $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
