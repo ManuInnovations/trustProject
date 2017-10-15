@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
     $('#story-form').bootstrapValidator({
         //submitButtons: '#postForm',
@@ -39,13 +41,6 @@ $(document).ready(function() {
                     }
                 }
             },
-            story: {
-              validators: {
-                notEmpty: {
-                  message: 'Please share your story in this section'
-                }
-              }
-            },
         }
     })
     .on('success.form.bv', function(e) {
@@ -59,14 +54,14 @@ $(document).ready(function() {
         var bv = $form.data('bootstrapValidator');
 
         // Use Ajax to submit form data
-        var url = 'https://docs.google.com/spreadsheets/d/1fS2THsjZ-tMnTTk9RyKCUsi6J2CKF6ZpYuOcs6mOUIM/edit?usp=sharing';
+        var url = 'https://script.google.com/macros/s/AKfycbz0AcOrnAAAohlVXQ-ZHyBV8bzziiZeAIRr7rngi79XborYNGM/exec';
         var redirectUrl = 'index.html';
 
         // show the loading
         $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
         var jqxhr = $.post(url, $form.serialize(), function(data) {
             console.log("Success! Data: " + data.statusText);
-            alert('Thanks, we will get in touch soon');
+            alert('Thank you for sharing your experience. We will get in touch soon.');
             $(location).attr('href',redirectUrl);
         })
             .fail(function(data) {
