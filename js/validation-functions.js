@@ -1,5 +1,7 @@
+
+
 $(document).ready(function() {
-    $('#client-form').bootstrapValidator({
+    $('#story-form').bootstrapValidator({
         //submitButtons: '#postForm',
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {
@@ -39,7 +41,6 @@ $(document).ready(function() {
                     }
                 }
             },
-
         }
     })
     .on('success.form.bv', function(e) {
@@ -53,14 +54,14 @@ $(document).ready(function() {
         var bv = $form.data('bootstrapValidator');
 
         // Use Ajax to submit form data
-        var url = 'https://script.google.com/macros/s/AKfycbyjtI8AS2C0eimoacKT1QrxM7aAHRB3HWfSI1dWJBaVZpc61UU/exec';
-        var redirectUrl = 'employers.html';
+        var url = 'https://script.google.com/macros/s/AKfycbz0AcOrnAAAohlVXQ-ZHyBV8bzziiZeAIRr7rngi79XborYNGM/exec';
+        var redirectUrl = 'index.html';
 
         // show the loading
         $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
         var jqxhr = $.post(url, $form.serialize(), function(data) {
             console.log("Success! Data: " + data.statusText);
-            alert('Thanks, we will get in touch soon');
+            alert('Thank you for sharing your experience. We will get in touch soon.');
             $(location).attr('href',redirectUrl);
         })
             .fail(function(data) {

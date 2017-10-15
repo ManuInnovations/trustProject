@@ -1,11 +1,27 @@
+/* TABLE OF CONTENTS ***********/
 /*
-    Theme Name: Mamba
-    Theme URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-*/
+imports
+general
+margin, padding
+sections
+spacers
+intro
+about
+carousel
+story
+legal resources
+support us
+footer
+media queries
+
+
+
+
+
+
+
 /* ================================
-Imports
+imports
 ================================= */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800);
 @import url('font-awesome.min.css');
@@ -14,7 +30,7 @@ Imports
 @import url('animate.css');
 
 /* ================================
-General
+general
 ================================= */
 body{
 	margin:0;
@@ -23,7 +39,6 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	line-height: 1.6em;
-
 }
 
 h1 {
@@ -52,7 +67,6 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	font-family: 'Open Sans', sans-serif;
 }
 
-
 .lead{
 	font-weight: 400;
 }
@@ -75,6 +89,7 @@ button {
 	-o-user-select: none;
 	user-select: none;
 }
+
 button.navbar-toggle {
 	background: #2b2b2b;
 	border: none;
@@ -84,6 +99,7 @@ button.navbar-toggle {
 .btn-theme,.btn-theme:hover,.btn-theme:focus{
 	color: #fff;
 }
+
 .btn-theme:hover{
 	background: transparent !important;
 	border-color: #999;
@@ -111,11 +127,10 @@ margin, padding
 }
 
 /* ================================
-Home sections
+sections
 ================================= */
 
 .home-section {
-	width: 100%;
 	padding: 90px 0px 150px 0px;
 }
 
@@ -125,7 +140,6 @@ Home sections
 }
 
 .section-heading h2 {
-	font-size: 38px;
 	text-transform: uppercase;
 }
 
@@ -138,7 +152,6 @@ Home sections
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
-
 
 /* --- section bg var --- */
 
@@ -161,14 +174,13 @@ Home sections
 	color: #fff;
 }
 
-
 .color-light p {
 	color: #eee;
 }
 
 
 /* ==========================
-Spacer
+spacers
 ============================= */
 
 #spacer1{
@@ -180,44 +192,40 @@ Spacer
 
 
 /* ================================
-Intro
+intro
 ================================= */
 
 #intro{
-    height:100vh;
-    width:100%;
-    background-color: #529abb;
-    background-position:center;
-    background-repeat:no-repeat;
-    overflow-y:hidden;
-    text-align:center;
-    position:relative;
+	height:100vh;
+	background-color: #529abb;
+	background-position:center;
+	background-repeat:no-repeat;
+	overflow-y:hidden;
+	text-align:center;
+	position:relative;
 }
 
 .intro-text {
 	position:relative;
-	width:100%;
-	margin-top:200px;
+	margin-top:100px;
 	z-index:1000;
 }
-#intro .brand {
-	margin-top: 40px;
-}
+
 .intro-text h1 a {
-	color:#fff;
-	text-align:center;
+	color: #fff;
+	text-align: center;
 	font-weight: 700;
-	font-size: 40px;
-	line-height:1.1em;
-	padding-top:30px;
+	line-height: 1.1em;
+	padding-top: 30px;
 	text-transform: uppercase;
 }
+
 .intro-text h1 a:hover {
 	text-decoration: none;
 }
 
 .line-spacer {
-	width: 20%;
+	width: 30%;
 	margin:0 auto;
 	margin-top: 20px;
 	margin-bottom: 25px;
@@ -226,61 +234,34 @@ Intro
 
 .intro-text p span {
 	color:#fff;
-	font-size: 24px;
 	text-align:center;
 	font-weight: 300;
-  font-family: 'Indie Flower', cursive;
+	font-family: 'Indie Flower', cursive;
 }
 
 .brand {
-  max-width: 70%;
-  margin: auto;
+	max-width: 70%;
+	margin: auto;
 }
 
 /* ================================
-About
+about
 ================================= */
-.box-team img {
-	margin-bottom: 30px;
-}
 
 .about-text {
-  column-count: 1;
-  padding: 2em;
-}
-
-iframe {
-  width: 90%;
+	column-count: 1;
 }
 
 /* ================================
-Services
+carousel
 ================================= */
 
-.service-box p {
-	margin-bottom: 20px;
+.carousel h4,.carousel p {
+	text-align: center;
 }
 
-.service.carousel h4,.service.carousel p {
-	text-align: left;
-}
-
-.service .carousel-control{
+.carousel-control{
 	background: none;
-}
-
-.service .screenshot{
-	overflow: hidden;
-	overflow: hidden;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.service .screenshot img{
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 4px;
-	width: 400px;
 }
 
 .service .carousel-indicators {
@@ -317,21 +298,29 @@ Services
 
 
 /* ================================
-Story
+story
 ================================= */
 
 form {
-  max-width: 70%;
-  margin: auto;
+	max-width: 70%;
+	margin: auto;
 }
 
 .input-group {
-  width: 80%;
-  margin: auto;
+	width: 80%;
+	margin: auto;
 }
 
 /* ================================
-Bottom widget
+legal resources
+================================= */
+
+.resource {
+	margin-bottom: 50px;
+}
+
+/* ================================
+support us
 ================================= */
 ul.social-network {
 	margin: 0;
@@ -349,7 +338,7 @@ ul.social-network li a:hover span .fa-circle {
 }
 
 /* ================================
-Footer
+footer
 ================================= */
 footer {
 	background: #2b2b2b;
@@ -359,39 +348,14 @@ footer {
 
 
 /* ================================
-more media queries
+media queries
 ================================= */
 
-@media (max-width:768px) {
-	#intro{
-		background-image: url(../img/bg-mac.png);
-		background-size:100%;
+@media (min-width:768px) {
+	.intro-text {
+		margin-top:200px;
 	}
-	.box-team, .box-team img {
-		text-align: center;
-	}
-	.box-team img {
-		float: none;
-		margin:0 auto;
-	}
-	.box-team {
-		margin-bottom: 30px;
-	}
-
-
-}
-
-@media (max-width:992px) {
-
-
-	.service p{
-			margin-bottom: 60px;
-	}
-
-}
-
-@media (max-width:480px){
-	#intro{
-		background-image: none;
+	.intro-text p span {
+		font-size: 1.4em;
 	}
 }
