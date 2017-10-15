@@ -1,6 +1,4 @@
-Thanks for downloading this theme!
+The Trust Project NZ
 
-Theme Name: Mamba
-Theme URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-Author: BootstrapMade
-Author URL: https://bootstrapmade.com
+Website for the Trust Project to collect stories from people affected negatively by legal Trusts.
+
