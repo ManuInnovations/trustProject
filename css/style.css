@@ -186,15 +186,21 @@ spacers
 #spacer1{
 	background-image: url(../img/spacer/rooftops-sm.jpeg);
 	background-repeat: no-repeat;
+	font-family: 'Indie Flower', cursive;
+
 }
 #spacer2{
 	background-image: url(../img/spacer/whanau-sm.jpeg);
 	background-repeat: no-repeat;
+	font-family: 'Indie Flower', cursive;
+
 
 }
 #spacer3{
 	background-image: url(../img/spacer/jandals-sm.jpeg);
 	background-repeat: no-repeat;
+	font-family: 'Indie Flower', cursive;
+
 
 }
 
@@ -265,7 +271,7 @@ carousel
 ================================= */
 
 #my-carousel {
-	
+
 }
 
 .carousel h4,.carousel p {
