@@ -186,18 +186,21 @@ spacers
 #spacer1{
 	background-image: url(../img/spacer/rooftops-sm.jpg);
 	background-repeat: no-repeat;
+  background-size: cover;
 	font-family: 'Architects Daughter', cursive;
 	letter-spacing: 1px;
 }
 #spacer2{
 	background-image: url(../img/spacer/whanau-sm.jpg);
 	background-repeat: no-repeat;
+  background-size: cover;
 	font-family: 'Architects Daughter', cursive;
 	letter-spacing: 1px;
 }
 #spacer3{
 	background-image: url(../img/spacer/jandals-sm.jpg);
 	background-repeat: no-repeat;
+  background-size: cover;
 	font-family: 'Architects Daughter', cursive;
 	letter-spacing: 1px;
 }
@@ -271,10 +274,6 @@ about
 /* ================================
 carousel
 ================================= */
-
-#my-carousel {
-
-}
 
 .carousel h4,.carousel p {
 	text-align: center;
@@ -380,17 +379,14 @@ media queries
 	}
 	#spacer1{
 		background-image: url(../img/spacer/rooftops.png);
-		min-height: 100vh;
 		width: 100%;
 	}
 	#spacer2{
 		background-image: url(../img/spacer/whanau.png);
-		min-height: 100vh;
 		width: 100%;
 	}
 	#spacer3{
 		background-image: url(../img/spacer/jandals.png);
-		min-height: 100vh;
 		width: 100%;
 
 
