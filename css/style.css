@@ -178,6 +178,15 @@ sections
 	color: #eee;
 }
 
+.logo {
+	right:0;
+	position: fixed;
+	z-index: 9999;
+}
+
+.logo img {
+  width: 80px;
+}
 
 /* ==========================
 spacers
@@ -186,18 +195,21 @@ spacers
 #spacer1{
 	background-image: url(../img/spacer/rooftops-sm.jpg);
 	background-repeat: no-repeat;
+  background-size: cover;
 	font-family: 'Architects Daughter', cursive;
 	letter-spacing: 1px;
 }
 #spacer2{
 	background-image: url(../img/spacer/whanau-sm.jpg);
 	background-repeat: no-repeat;
+  background-size: cover;
 	font-family: 'Architects Daughter', cursive;
 	letter-spacing: 1px;
 }
 #spacer3{
 	background-image: url(../img/spacer/jandals-sm.jpg);
 	background-repeat: no-repeat;
+  background-size: cover;
 	font-family: 'Architects Daughter', cursive;
 	letter-spacing: 1px;
 }
@@ -271,10 +283,6 @@ about
 /* ================================
 carousel
 ================================= */
-
-#my-carousel {
-
-}
 
 .carousel h4,.carousel p {
 	text-align: center;
@@ -376,23 +384,21 @@ media queries
 		margin-top:200px;
 	}
 	.intro-text p span {
-		font-size: 1.4em;
+		font-size: 1.8em;
 	}
 	#spacer1{
 		background-image: url(../img/spacer/rooftops.png);
-		min-height: 100vh;
 		width: 100%;
 	}
 	#spacer2{
 		background-image: url(../img/spacer/whanau.png);
-		min-height: 100vh;
 		width: 100%;
 	}
 	#spacer3{
 		background-image: url(../img/spacer/jandals.png);
-		min-height: 100vh;
 		width: 100%;
-
-
 	}
+  .logo img {
+    width: 120px;
+  }
 }
