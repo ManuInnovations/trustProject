@@ -178,6 +178,15 @@ sections
 	color: #eee;
 }
 
+.logo {
+	right:0;
+	position: fixed;
+	z-index: 9999;
+}
+
+.logo img {
+  width: 80px;
+}
 
 /* ==========================
 spacers
@@ -375,7 +384,7 @@ media queries
 		margin-top:200px;
 	}
 	.intro-text p span {
-		font-size: 1.4em;
+		font-size: 1.8em;
 	}
 	#spacer1{
 		background-image: url(../img/spacer/rooftops.png);
@@ -388,7 +397,8 @@ media queries
 	#spacer3{
 		background-image: url(../img/spacer/jandals.png);
 		width: 100%;
-
-
 	}
+  .logo img {
+    width: 100px;
+  }
 }
