@@ -67,7 +67,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	font-family: 'Open Sans', sans-serif;
 }
 
-.lead{
+.lead {
 	font-weight: 400;
 }
 
@@ -184,24 +184,26 @@ spacers
 ============================= */
 
 #spacer1{
-	background-image: url(../img/spacer/rooftops-sm.jpeg);
+	background-image: url(../img/spacer/rooftops-sm.jpg);
 	background-repeat: no-repeat;
-	font-family: 'Indie Flower', cursive;
-
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
 }
 #spacer2{
-	background-image: url(../img/spacer/whanau-sm.jpeg);
+	background-image: url(../img/spacer/whanau-sm.jpg);
 	background-repeat: no-repeat;
-	font-family: 'Indie Flower', cursive;
-
-
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
 }
 #spacer3{
-	background-image: url(../img/spacer/jandals-sm.jpeg);
+	background-image: url(../img/spacer/jandals-sm.jpg);
 	background-repeat: no-repeat;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
+}
 
-
+.spacer p {
+	color: black;
 }
 
 
@@ -249,8 +251,8 @@ intro
 .intro-text p span {
 	color:#fff;
 	text-align:center;
-	font-weight: 300;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
 }
 
 .brand {
@@ -377,17 +379,20 @@ media queries
 		font-size: 1.4em;
 	}
 	#spacer1{
-		background-image: url(../img/spacer/rooftops.JPG);
+		background-image: url(../img/spacer/rooftops.png);
 		min-height: 100vh;
+		width: 100%;
 	}
 	#spacer2{
-		background-image: url(../img/spacer/whanau.JPG);
+		background-image: url(../img/spacer/whanau.png);
 		min-height: 100vh;
-
+		width: 100%;
 	}
 	#spacer3{
-		background-image: url(../img/spacer/jandals.JPG);
+		background-image: url(../img/spacer/jandals.png);
 		min-height: 100vh;
+		width: 100%;
+
 
 	}
 }
