@@ -180,7 +180,9 @@ sections
 }
 
 .logo img {
-  width: 80px;
+  width: 150px;
+	margin-top: 20px;
+	padding: 6px 12px;
 }
 
 /* ==========================
@@ -391,6 +393,6 @@ media queries
 		width: 100%;
 	}
   .logo img {
-    width: 120px;
+    width: 300px;
   }
 }
