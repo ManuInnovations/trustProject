@@ -219,7 +219,7 @@ intro
 ================================= */
 
 #intro{
-	height:100vh;
+	min-height: 100vh;
 	background-color: #529abb;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -252,11 +252,16 @@ intro
 .brand {
 	max-width: 70%;
 	margin: auto;
-  font-size: 2em;
+  font-size: 1.5em;
+  margin: 3em auto;
 }
 
 #more-story {
-  display: none;
+  color: #fff;
+  font-size: 1em;
+  font-family: 'Architects Daughter', cursive;
+	letter-spacing: 2px;
+
 }
 
 /* ================================
