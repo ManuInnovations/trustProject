@@ -15,11 +15,6 @@ footer
 media queries
 
 
-
-
-
-
-
 /* ================================
 imports
 ================================= */
@@ -224,7 +219,7 @@ intro
 ================================= */
 
 #intro{
-	height:100vh;
+	min-height: 100vh;
 	background-color: #529abb;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -237,19 +232,6 @@ intro
 	position:relative;
 	margin-top:100px;
 	z-index:1000;
-}
-
-.intro-text h1 a {
-	color: #fff;
-	text-align: center;
-	font-weight: 700;
-	line-height: 1.1em;
-	padding-top: 30px;
-	text-transform: uppercase;
-}
-
-.intro-text h1 a:hover {
-	text-decoration: none;
 }
 
 .line-spacer {
@@ -268,8 +250,18 @@ intro
 }
 
 .brand {
-	max-width: 70%;
+	max-width: 80%;
 	margin: auto;
+  font-size: 1.5em;
+  margin: 3em auto;
+}
+
+#more-story {
+  color: #fff;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+  margin-bottom: 2em;
 }
 
 /* ================================
