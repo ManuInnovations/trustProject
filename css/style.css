@@ -250,7 +250,7 @@ intro
 }
 
 .brand {
-	max-width: 70%;
+	max-width: 80%;
 	margin: auto;
   font-size: 1.5em;
   margin: 3em auto;
@@ -258,10 +258,10 @@ intro
 
 #more-story {
   color: #fff;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: 'Open Sans', sans-serif;
-	letter-spacing: 2px;
-
+	letter-spacing: 1px;
+  margin-bottom: 2em;
 }
 
 /* ================================
