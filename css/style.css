@@ -177,6 +177,7 @@ sections
 	right:0;
 	position: fixed;
 	z-index: 9999;
+	padding: 30px 30px 30px 0px;
 }
 
 .logo img {
@@ -391,6 +392,6 @@ media queries
 		width: 100%;
 	}
   .logo img {
-    width: 120px;
+    width: 300px;
   }
 }
