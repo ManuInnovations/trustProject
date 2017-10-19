@@ -387,12 +387,13 @@ sections
 }
 
 .logo {
-	/*right:0;*/
-	position: -webkit-sticky;  // required for Safari
+	right:0;
+	position: fixed;
+	z-index: 9999;
+	/*position: -webkit-sticky;  // required for Safari
   position: sticky;
-  top: 0; // required as well.
-	/*z-index: 9999;*/
-}
+  top: 0; // required as well.*/
+	}
 
 .logo img {
   width: 150px;
