@@ -196,7 +196,7 @@ body {
 
 .mpo-modal-body {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 90%;
@@ -215,18 +215,20 @@ body {
 }
 
 .mpo-modal-content {
-  margin: 10px 10px 10px;
-  padding: 50px 0 0;
+  margin: 10px auto;
   position: relative;
 	font-family: 'Architects Daughter', cursive;
+  font-size: .7em;
 	letter-spacing: 1px;
+  width: 80%;
+  height: 500px;
 }
 
 .mpo-modal-slide {
   display: flex;
   position: absolute;
   transition:  all 0.7s ease-in;
-  width: 100%
+  width: 100%;
 }
 
 .modal-content-1 {
@@ -279,8 +281,8 @@ body {
 
 .mpo-modal-nav {
   position: absolute;
-  bottom: 5px;
-  right: -550px;
+  bottom: 0px;
+  right: -260px;
   width: 100%;
 
   label {
@@ -325,11 +327,28 @@ body {
   position: relative;
 }
 
-@media only screen and (max-width: 767px) {
+@media (min-width: 767px) {
   .mpo-modal-body {
-    max-width: 100%;
-    width: 100%;
-    border-radius: 0;
+    width: 90%;
+  }
+  .mpo-modal-nav {
+    right: -250px;
+  }
+  .mpo-modal-content {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1000px) {
+  .mpo-modal-nav {
+    right: -300px;
+  }
+}
+@media (min-width: 1200px) {
+  .mpo-modal-content {
+    height: 400px;
+  }
+  .mpo-modal-nav {
+    right: -380px;
   }
 }
 
@@ -387,20 +406,43 @@ sections
 }
 
 .logo {
-	right:0;
-	position: fixed;
-	z-index: 9999;
-	/*position: -webkit-sticky;  // required for Safari
-  position: sticky;
-  top: 0; // required as well.*/
-	}
+  position: fixed;
+  z-index: 100;
+  margin: 4em 20%;
+}
 
 .logo img {
-  width: 150px;
+  width: 250px;
 	margin-top: 20px;
 	padding: 6px 12px;
 }
 
+@media (min-width: 500px) {
+  .logo {
+    margin: 3em 25%;
+  }
+  .logo img {
+    width: 300px;
+  }
+	.intro-text p span {
+		font-size: 1.5em;
+	}
+}
+@media (min-width: 800px) {
+  .logo {
+    margin: 3em 30%;
+  }
+}
+@media (min-width: 1000px) {
+  .logo {
+    margin: 3em 35%;
+  }
+}
+@media (min-width: 1200px) {
+  .logo {
+    margin: 3em 40%;
+  }
+}
 /* ==========================
 spacers
 ============================= */
@@ -409,8 +451,12 @@ spacers
 	background-image: url(../img/spacer/rooftops-sm.jpg);
 	background-repeat: no-repeat;
   background-size: cover;
-	font-family: 'Architects Daughter', cursive;
+	font-family: 'Open Sans', sans-serif;
+	font-style: oblique;
+  font-weight: bold;
+	color: black;
 	letter-spacing: 1px;
+	text-align: left;
 }
 #spacer2{
 	background-image: url(../img/spacer/whanau-sm.jpg);
@@ -447,8 +493,7 @@ intro
 }
 
 .intro-text {
-	position:relative;
-	margin-top:100px;
+	margin-top:150px;
 	z-index:1000;
 }
 
@@ -482,12 +527,24 @@ intro
   margin-bottom: 2em;
 }
 
+@media (min-width: 500px) {
+  .intro-text {
+  	margin-top: 250px;
+  }
+}
+
 /* ================================
 about
 ================================= */
 
 .about-text {
 	column-count: 1;
+}
+
+@media (min-width: 800px) {
+  .home-section p {
+    font-size: 1.5em;
+  }
 }
 
 /* ================================
@@ -590,12 +647,7 @@ media queries
 ================================= */
 
 @media (min-width:768px) {
-	.intro-text {
-		margin-top:200px;
-	}
-	.intro-text p span {
-		font-size: 1.8em;
-	}
+
 	#spacer1{
 		background-image: url(../img/spacer/rooftops.png);
 		width: 100%;
@@ -608,7 +660,4 @@ media queries
 		background-image: url(../img/spacer/jandals.png);
 		width: 100%;
 	}
-  .logo img {
-    width: 300px;
-  }
 }
