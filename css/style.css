@@ -406,7 +406,7 @@ sections
 }
 
 .logo {
-	right:0;
+  margin: 2em 20%;
 	position: fixed;
 	z-index: 1000;
 	/*position: -webkit-sticky;  // required for Safari
@@ -415,7 +415,7 @@ sections
 	}
 
 .logo img {
-  width: 150px;
+  width: 250px;
 	margin-top: 20px;
 	padding: 6px 12px;
 }
@@ -470,7 +470,7 @@ intro
 
 .intro-text {
 	position:relative;
-	margin-top:100px;
+	margin-top:150px;
 	z-index:1000;
 }
 
