@@ -196,7 +196,7 @@ body {
 
 .mpo-modal-body {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 90%;
@@ -215,18 +215,20 @@ body {
 }
 
 .mpo-modal-content {
-  margin: 10px 10px 10px;
-  padding: 50px 0 0;
+  margin: 10px auto;
   position: relative;
 	font-family: 'Architects Daughter', cursive;
+  font-size: .8em;
 	letter-spacing: 1px;
+  width: 80%;
+  height: 500px;
 }
 
 .mpo-modal-slide {
   display: flex;
   position: absolute;
   transition:  all 0.7s ease-in;
-  width: 100%
+  width: 100%;
 }
 
 .modal-content-1 {
@@ -279,8 +281,8 @@ body {
 
 .mpo-modal-nav {
   position: absolute;
-  bottom: 5px;
-  right: -550px;
+  bottom: 0px;
+  right: -270px;
   width: 100%;
 
   label {
@@ -325,11 +327,28 @@ body {
   position: relative;
 }
 
-@media only screen and (max-width: 767px) {
+@media (min-width: 767px) {
   .mpo-modal-body {
-    max-width: 100%;
-    width: 100%;
-    border-radius: 0;
+    width: 90%;
+  }
+  .mpo-modal-nav {
+    right: -250px;
+  }
+  .mpo-modal-content {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1000px) {
+  .mpo-modal-nav {
+    right: -300px;
+  }
+}
+@media (min-width: 1200px) {
+  .mpo-modal-content {
+    height: 400px;
+  }
+  .mpo-modal-nav {
+    right: -380px;
   }
 }
 
@@ -389,7 +408,7 @@ sections
 .logo {
 	right:0;
 	position: fixed;
-	z-index: 9999;
+	z-index: 1000;
 	/*position: -webkit-sticky;  // required for Safari
   position: sticky;
   top: 0; // required as well.*/
