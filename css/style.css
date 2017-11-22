@@ -410,8 +410,10 @@ spacers
 	background-repeat: no-repeat;
   background-size: cover;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
+	font-style: oblique;
+	color: black;
 	letter-spacing: 1px;
+	text-align: left;
 }
 #spacer2{
 	background-image: url(../img/spacer/whanau-sm.jpg);
