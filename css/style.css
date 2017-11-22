@@ -406,13 +406,11 @@ sections
 }
 
 .logo {
-  margin: 2em 20%;
-	position: fixed;
-	z-index: 1000;
-	/*position: -webkit-sticky;  // required for Safari
-  position: sticky;
-  top: 0; // required as well.*/
-	}
+  position: fixed;
+  z-index: 100;
+  margin: 4em 20%;
+
+}
 
 .logo img {
   width: 250px;
@@ -420,6 +418,32 @@ sections
 	padding: 6px 12px;
 }
 
+@media (min-width: 500px) {
+  .logo {
+    margin: 3em 25%;
+  }
+  .logo img {
+    width: 300px;
+  }
+	.intro-text p span {
+		font-size: 1.5em;
+	}
+}
+@media (min-width: 800px) {
+  .logo {
+    margin: 3em 30%;
+  }
+}
+@media (min-width: 1000px) {
+  .logo {
+    margin: 3em 35%;
+  }
+}
+@media (min-width: 1200px) {
+  .logo {
+    margin: 3em 40%;
+  }
+}
 /* ==========================
 spacers
 ============================= */
@@ -612,12 +636,7 @@ media queries
 ================================= */
 
 @media (min-width:768px) {
-	.intro-text {
-		margin-top:200px;
-	}
-	.intro-text p span {
-		font-size: 1.8em;
-	}
+
 	#spacer1{
 		background-image: url(../img/spacer/rooftops.png);
 		width: 100%;
@@ -630,7 +649,4 @@ media queries
 		background-image: url(../img/spacer/jandals.png);
 		width: 100%;
 	}
-  .logo img {
-    width: 300px;
-  }
 }
