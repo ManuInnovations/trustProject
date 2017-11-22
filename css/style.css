@@ -218,7 +218,7 @@ body {
   margin: 10px auto;
   position: relative;
 	font-family: 'Architects Daughter', cursive;
-  font-size: .8em;
+  font-size: .7em;
 	letter-spacing: 1px;
   width: 80%;
   height: 500px;
@@ -282,7 +282,7 @@ body {
 .mpo-modal-nav {
   position: absolute;
   bottom: 0px;
-  right: -270px;
+  right: -260px;
   width: 100%;
 
   label {
@@ -409,7 +409,6 @@ sections
   position: fixed;
   z-index: 100;
   margin: 4em 20%;
-
 }
 
 .logo img {
@@ -493,7 +492,6 @@ intro
 }
 
 .intro-text {
-	position:relative;
 	margin-top:150px;
 	z-index:1000;
 }
@@ -526,6 +524,12 @@ intro
   font-family: 'Open Sans', sans-serif;
 	letter-spacing: 1px;
   margin-bottom: 2em;
+}
+
+@media (min-width: 500) {
+  .intro-text {
+  	margin-top:350px;
+  }
 }
 
 /* ================================
