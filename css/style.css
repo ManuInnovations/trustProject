@@ -409,7 +409,8 @@ spacers
 	background-image: url(../img/spacer/rooftops-sm.jpg);
 	background-repeat: no-repeat;
   background-size: cover;
-	font-family: 'Architects Daughter', cursive;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
 	letter-spacing: 1px;
 }
 #spacer2{
