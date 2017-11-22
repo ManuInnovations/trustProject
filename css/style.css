@@ -453,6 +453,7 @@ spacers
   background-size: cover;
 	font-family: 'Open Sans', sans-serif;
 	font-style: oblique;
+  font-weight: bold;
 	color: black;
 	letter-spacing: 1px;
 	text-align: left;
@@ -538,6 +539,12 @@ about
 
 .about-text {
 	column-count: 1;
+}
+
+@media (min-width: 800px) {
+  .home-section p {
+    font-size: 1.5em;
+  }
 }
 
 /* ================================
