@@ -545,13 +545,18 @@ intro
 about
 ================================= */
 
-.about-text {
+.about_text {
 	column-count: 1;
 }
 
 @media (min-width: 800px) {
   .home-section p {
     font-size: 1.5em;
+  }
+  .about_text {
+  	column-count: 2;
+    text-align: left;
+    width: 100%;
   }
 }
 
@@ -621,6 +626,10 @@ form {
 .input-group {
 	width: 80%;
 	margin: auto;
+}
+
+.story_text {
+  text-align: left;
 }
 
 /* ================================
