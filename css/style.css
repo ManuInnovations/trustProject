@@ -7,6 +7,7 @@ sections
 spacers
 intro
 about
+submissions
 carousel
 story
 legal resources
@@ -472,6 +473,13 @@ spacers
 	font-family: 'Architects Daughter', cursive;
 	letter-spacing: 1px;
 }
+#spacer4{
+	background-image: url(../img/spacer/wharf.png);
+	background-repeat: no-repeat;
+  background-size: cover;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
+}
 
 .spacer p {
 	color: black;
@@ -546,6 +554,15 @@ about
     font-size: 1.5em;
   }
 }
+
+/* ================================
+submissions
+================================= */
+
+.submissionBox {
+  border: solid 1px black;
+}
+
 
 /* ================================
 carousel
