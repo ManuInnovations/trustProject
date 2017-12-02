@@ -35,30 +35,6 @@ body{
 	line-height: 1.6em;
 }
 
-h1 {
-	font-size: 36px;
-}
-h2 {
-	font-size: 32px;
-}
-h3 {
-	font-size: 28px;
-}
-h4 {
-	font-size: 24px;
-}
-
-h1,h2,h3,h4,.h1,.h2,.h3,.h4 {
-	color: #3a3a3a;
-	font-weight: 700;
-	margin-bottom: 20px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.lead {
-	font-weight: 400;
-}
-
 button {
 	display: inline-block;
 	margin-bottom: 20px;
@@ -85,57 +61,30 @@ button.navbar-toggle {
 	color: #fff;
 }
 
-.btn {
-  background: #fff;
-  border: #555 solid 1px;
-  border-radius: 3px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  padding: 8px 15px;
-  text-decoration: none;
-  text-align: center;
-  min-width: 60px;
-  position: relative;
+.btn:visited, .btn:hover, .btn a {
+  color: white;
 }
 
-@media (min-width: 767px) {
-  .mpo-modal-body {
-    width: 90%;
-  }
-  .mpo-modal-nav {
-    right: -250px;
-  }
-  .mpo-modal-content {
-    font-size: 1em;
-  }
+.btn {
+  margin: 20px 30px;
 }
-@media (min-width: 1000px) {
-  .mpo-modal-nav {
-    right: -300px;
-  }
-}
-@media (min-width: 1200px) {
-  .mpo-modal-content {
-    height: 400px;
-  }
-  .mpo-modal-nav {
-    right: -380px;
-  }
+
+a, a:visited, a:hover {
+  color: white;
 }
 
 /* ================================
 sections
 ================================= */
 
-
 .home-section {
-	padding: 90px 0px 150px 0px;
+	padding: 50px 0px 100px 0px;
 }
 
 /* --- heading --- */
 .section-heading {
 	margin-bottom: 70px;
+  margin-top: 100px;
 }
 
 .section-heading h2 {
@@ -148,34 +97,13 @@ sections
 	height: 1px;
 	width: 80px;
 	background: #333;
-	margin-top: 10px;
+	margin-top: 80px;
 	margin-bottom: 20px;
 }
 
-/* --- section bg var --- */
-
-.bg-white {
-	background: #fff;
-}
-
-.bg-gray {
-	background: #f8f8f8;
-}
-
-.bg-dark {
-	background: #575757;
-}
-
-
-/* --- section content general color --- */
-
-.color-light h1,.color-light h2,.color-light h3,.color-light h4,.color-light h5,.color-light h6 {
-	color: #fff;
-}
-
-.color-light p {
-	color: #eee;
-}
+/* =================
+Logo
+==================== */
 
 .logo {
   position: fixed;
@@ -288,7 +216,6 @@ intro
 
 .intro-text {
 	margin-top:150px;
-	z-index:1000;
 }
 
 .line-spacer {
@@ -311,14 +238,6 @@ intro
 	margin: auto;
   font-size: 1.5em;
   margin: 3em auto;
-}
-
-#more-story {
-  color: #fff;
-  font-size: 1.2em;
-  font-family: 'Open Sans', sans-serif;
-	letter-spacing: 1px;
-  margin-bottom: 2em;
 }
 
 @media (min-width: 500px) {
@@ -354,58 +273,12 @@ submissions
   border: solid 1px black;
 }
 
-
-/* ================================
-carousel
-================================= */
-
-.carousel h4,.carousel p {
-	text-align: center;
-}
-
-.carousel-control{
-	background: none;
-}
-
-.service .carousel-indicators {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding: 5px;
-	padding-bottom: 8px;
-	width: 100%;
-	background: #ffffff;
-}
-
-.service .carousel-indicators .active {
-	width: 45px;
-	height: 5px;
-	border: none;
-	border-radius: 0px;
-}
-
-.service .carousel-indicators li {
-	display: inline-block;
-	margin: 1px;
-	width: 45px;
-	height: 5px;
-	border: none;
-	border-radius: 0px;
-	background: #eeeeee;
-	text-indent: -999px;
-	cursor: pointer;
-}
-
-
 /* ================================
 story
 ================================= */
 
 form {
-	max-width: 70%;
+	max-width: 80%;
 	margin: auto;
 }
 
@@ -427,6 +300,14 @@ legal resources
 }
 
 /* ================================
+news
+================================= */
+
+.news {
+	margin-top: -150px;
+}
+
+/* ================================
 support us
 ================================= */
 ul.social-network {
@@ -435,6 +316,7 @@ ul.social-network {
 	padding-left: 0;
 	list-style: none;
 }
+
 ul.social-network li {
 	display: inline;
 	margin: 5px 5px;
