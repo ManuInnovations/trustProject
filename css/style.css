@@ -13,8 +13,6 @@ story
 legal resources
 support us
 footer
-media queries
-
 
 /* ================================
 imports
@@ -35,36 +33,6 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	line-height: 1.6em;
-}
-
-h1 {
-	font-size: 36px;
-}
-h2 {
-	font-size: 32px;
-}
-h3 {
-	font-size: 28px;
-}
-h4 {
-	font-size: 24px;
-}
-h5 {
-	font-size: 20px;
-}
-h6 {
-	font-size: 18px;
-}
-
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
-	color: #3a3a3a;
-	font-weight: 700;
-	margin-bottom: 20px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.lead {
-	font-weight: 400;
 }
 
 button {
@@ -93,278 +61,30 @@ button.navbar-toggle {
 	color: #fff;
 }
 
-.btn-theme,.btn-theme:hover,.btn-theme:focus{
-	color: #fff;
-}
-
-.btn-theme:hover{
-	background: transparent !important;
-	border-color: #999;
-	color: #999;
-}
-
-
-/* ================================
-margin, padding
-================================= */
-.mar-top0 {
-	margin-top: 0;
-}
-.mar-top10 {
-	margin-top: 10px;
-}
-.mar-top20 {
-	margin-top: 20px;
-}
-.mar-top30 {
-	margin-top: 30px;
-}
-.mar-top40 {
-	margin-top: 40px;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  color: #222;
-  height: 100%;
-  font-family: georgia, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  margin: 0;
-}
-
-.header{
-  margin: 30px;
-  text-align: center;
-}
-/* modal open|close controller */
-#mpo-modal-controller {
-  position: absolute;
-  left: -999em;
-  opacity: 0;
-}
-.mpo-modal-open:checked ~ .mpo-modal-wrap {
-  display: block;
-
-  &:before, .mpo-modal-overlay {
-    display: block;
-  }
-}
-.mpo-modal-close {
-  cursor: pointer;
-  font-size: 35px;
-  font-weight: bold;
-  line-height: 20px;
-  padding: 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 100;
-}
-
-
-/* modal */
-.mpo-modal-wrap {
-  display: none;
-
-  &:before {
-    content: "";
-    display: none;
-    background: rgba(0, 0, 0, .8);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 101;
-  }
-}
-
-.mpo-modal-overlay {
-  bottom: 0;
-  display: none;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 102;
-}
-
-.mpo-modal-body {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 90%;
-  padding: 5px 0;
-  background: #fff;
-  border-radius: .25em;
-  overflow: hidden;
-  text-align: left;
-  width: 100%;
-  z-index: 103;
-
-  p {
-    text-align: left;
-    line-height: 1.3;
-  }
-}
-
-.mpo-modal-content {
-  margin: 10px auto;
-  position: relative;
-	font-family: 'Architects Daughter', cursive;
-  font-size: .7em;
-	letter-spacing: 1px;
-  width: 80%;
-  height: 500px;
-}
-
-.mpo-modal-slide {
-  display: flex;
-  position: absolute;
-  transition:  all 0.7s ease-in;
-  width: 100%;
-}
-
-.modal-content-1 {
-}
-
-.modal-content-2 {
-  left: 100%;
-}
-
-.modal-content-3 {
-  left: 200%;
-}
-
-#modal-content-1:checked ~ .content-1 {
-  left: 0;
-  overflow: auto;
-  position: relative;
-}
-#modal-content-1:checked ~ .content-2 {
-  left: 100%;
-}
-
-#modal-content-2:checked ~ .content-1 {
-  left: -100%;
-}
-
-#modal-content-2:checked ~ .content-2 {
-  left: 0;
-  overflow: auto;
-  position: relative;
-}
-
-#modal-content-2:checked ~ .content-3 {
-  left: 100%;
-}
-
-#modal-content-3:checked ~ .content-1 {
-  left: -200%;
-}
-
-#modal-content-3:checked ~ .content-2 {
-  left: -100%;
-}
-
-#modal-content-3:checked ~ .content-3 {
-  left: 0;
-  overflow: auto;
-  position: relative;
-}
-
-.mpo-modal-nav {
-  position: absolute;
-  bottom: 0px;
-  right: -260px;
-  width: 100%;
-
-  label {
-    position: absolute;
-    background: #f7f7f7;
-    color: #303030;
-    cursor: pointer;
-    display: inline-block;
-    font: 50px Arial;
-    line-height: 45px;
-    height: 50px;
-    width: 80px;
-    padding: 0 30px 0 25px;
-    text-decoration: none;
-    vertical-align: middle;
-    letter-spacing: -7px;
-    text-align: center;
-
-    &.prev-slide {
-      content: '';
-      left: 0;
-    }
-    &.next-slide {
-      content: '';
-      right: 0;
-    }
-  }
-
+.btn:visited, .btn:hover, .btn a {
+  color: white;
 }
 
 .btn {
-  background: #fff;
-  border: #555 solid 1px;
-  border-radius: 3px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  padding: 8px 15px;
-  text-decoration: none;
-  text-align: center;
-  min-width: 60px;
-  position: relative;
+  margin: 20px 30px;
 }
 
-@media (min-width: 767px) {
-  .mpo-modal-body {
-    width: 90%;
-  }
-  .mpo-modal-nav {
-    right: -250px;
-  }
-  .mpo-modal-content {
-    font-size: 1em;
-  }
-}
-@media (min-width: 1000px) {
-  .mpo-modal-nav {
-    right: -300px;
-  }
-}
-@media (min-width: 1200px) {
-  .mpo-modal-content {
-    height: 400px;
-  }
-  .mpo-modal-nav {
-    right: -380px;
-  }
+a, a:visited, a:hover {
+  color: white;
 }
 
 /* ================================
 sections
 ================================= */
 
-
 .home-section {
-	padding: 90px 0px 150px 0px;
+	padding: 50px 0px 100px 0px;
 }
 
 /* --- heading --- */
 .section-heading {
 	margin-bottom: 70px;
+  margin-top: 100px;
 }
 
 .section-heading h2 {
@@ -377,34 +97,13 @@ sections
 	height: 1px;
 	width: 80px;
 	background: #333;
-	margin-top: 10px;
+	margin-top: 80px;
 	margin-bottom: 20px;
 }
 
-/* --- section bg var --- */
-
-.bg-white {
-	background: #fff;
-}
-
-.bg-gray {
-	background: #f8f8f8;
-}
-
-.bg-dark {
-	background: #575757;
-}
-
-
-/* --- section content general color --- */
-
-.color-light h1,.color-light h2,.color-light h3,.color-light h4,.color-light h5,.color-light h6 {
-	color: #fff;
-}
-
-.color-light p {
-	color: #eee;
-}
+/* =================
+Logo
+==================== */
 
 .logo {
   position: fixed;
@@ -459,6 +158,7 @@ spacers
 	letter-spacing: 1px;
 	text-align: left;
 }
+
 #spacer2{
 	background-image: url(../img/spacer/whanau-sm.jpg);
 	background-repeat: no-repeat;
@@ -466,6 +166,7 @@ spacers
 	font-family: 'Architects Daughter', cursive;
 	letter-spacing: 1px;
 }
+
 #spacer3{
 	background-image: url(../img/spacer/jandals-sm.jpg);
 	background-repeat: no-repeat;
@@ -473,8 +174,9 @@ spacers
 	font-family: 'Architects Daughter', cursive;
 	letter-spacing: 1px;
 }
+
 #spacer4{
-	background-image: url(../img/spacer/wharf.png);
+	background-image: url(../img/spacer/wharf-sm.jpg);
 	background-repeat: no-repeat;
   background-size: cover;
 	font-family: 'Architects Daughter', cursive;
@@ -483,6 +185,24 @@ spacers
 
 .spacer p {
 	color: black;
+}
+
+@media (min-width:768px) {
+	#spacer1{
+		background-image: url(../img/spacer/rooftops.png);
+		width: 100%;
+	}
+	#spacer2{
+		background-image: url(../img/spacer/whanau.png);
+		width: 100%;
+	}
+	#spacer3{
+		background-image: url(../img/spacer/jandals.png);
+		width: 100%;
+	}
+  #spacer4{
+  	background-image: url(../img/spacer/wharf-lg.jpg);
+  }
 }
 
 
@@ -502,7 +222,6 @@ intro
 
 .intro-text {
 	margin-top:150px;
-	z-index:1000;
 }
 
 .line-spacer {
@@ -525,14 +244,6 @@ intro
 	margin: auto;
   font-size: 1.5em;
   margin: 3em auto;
-}
-
-#more-story {
-  color: #fff;
-  font-size: 1.2em;
-  font-family: 'Open Sans', sans-serif;
-	letter-spacing: 1px;
-  margin-bottom: 2em;
 }
 
 @media (min-width: 500px) {
@@ -568,58 +279,12 @@ submissions
   border: solid 1px black;
 }
 
-
-/* ================================
-carousel
-================================= */
-
-.carousel h4,.carousel p {
-	text-align: center;
-}
-
-.carousel-control{
-	background: none;
-}
-
-.service .carousel-indicators {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding: 5px;
-	padding-bottom: 8px;
-	width: 100%;
-	background: #ffffff;
-}
-
-.service .carousel-indicators .active {
-	width: 45px;
-	height: 5px;
-	border: none;
-	border-radius: 0px;
-}
-
-.service .carousel-indicators li {
-	display: inline-block;
-	margin: 1px;
-	width: 45px;
-	height: 5px;
-	border: none;
-	border-radius: 0px;
-	background: #eeeeee;
-	text-indent: -999px;
-	cursor: pointer;
-}
-
-
 /* ================================
 story
 ================================= */
 
 form {
-	max-width: 70%;
+	max-width: 80%;
 	margin: auto;
 }
 
@@ -641,6 +306,14 @@ legal resources
 }
 
 /* ================================
+news
+================================= */
+
+.news {
+	margin-top: -150px;
+}
+
+/* ================================
 support us
 ================================= */
 ul.social-network {
@@ -649,6 +322,7 @@ ul.social-network {
 	padding-left: 0;
 	list-style: none;
 }
+
 ul.social-network li {
 	display: inline;
 	margin: 5px 5px;
@@ -665,25 +339,4 @@ footer {
 	background: #2b2b2b;
 	color: #ddd;
 	padding: 50px 0 30px;
-}
-
-
-/* ================================
-media queries
-================================= */
-
-@media (min-width:768px) {
-
-	#spacer1{
-		background-image: url(../img/spacer/rooftops.png);
-		width: 100%;
-	}
-	#spacer2{
-		background-image: url(../img/spacer/whanau.png);
-		width: 100%;
-	}
-	#spacer3{
-		background-image: url(../img/spacer/jandals.png);
-		width: 100%;
-	}
 }
