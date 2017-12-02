@@ -158,6 +158,7 @@ spacers
 	letter-spacing: 1px;
 	text-align: left;
 }
+
 #spacer2{
 	background-image: url(../img/spacer/whanau-sm.jpg);
 	background-repeat: no-repeat;
@@ -165,6 +166,7 @@ spacers
 	font-family: 'Architects Daughter', cursive;
 	letter-spacing: 1px;
 }
+
 #spacer3{
 	background-image: url(../img/spacer/jandals-sm.jpg);
 	background-repeat: no-repeat;
@@ -172,8 +174,9 @@ spacers
 	font-family: 'Architects Daughter', cursive;
 	letter-spacing: 1px;
 }
+
 #spacer4{
-	background-image: url(../img/spacer/wharf.png);
+	background-image: url(../img/spacer/wharf-sm.jpg);
 	background-repeat: no-repeat;
   background-size: cover;
 	font-family: 'Architects Daughter', cursive;
@@ -197,6 +200,9 @@ spacers
 		background-image: url(../img/spacer/jandals.png);
 		width: 100%;
 	}
+  #spacer4{
+  	background-image: url(../img/spacer/wharf-lg.jpg);
+  }
 }
 
 
