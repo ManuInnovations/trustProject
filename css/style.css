@@ -39,6 +39,12 @@ ul {
 	text-align: left;
 }
 
+ol {
+	text-align: left;
+
+
+}
+
 button {
 	display: inline-block;
 	margin-bottom: 20px;
