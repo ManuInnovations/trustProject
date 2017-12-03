@@ -219,7 +219,7 @@ intro
 ================================= */
 
 #intro{
-	min-height: 100vh;
+	min-height: 80vh;
 	background-color: #529abb;
 	background-position:center;
 	background-repeat:no-repeat;
