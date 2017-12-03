@@ -41,8 +41,6 @@ ul {
 
 ol {
 	text-align: left;
-
-
 }
 
 button {
@@ -93,7 +91,7 @@ sections
 
 /* --- heading --- */
 .section-heading {
-	margin-bottom: 70px;
+	/*margin-bottom: 70px;*/
   margin-top: 100px;
 }
 
@@ -111,6 +109,11 @@ sections
 	margin-bottom: 20px;
 }
 
+.section-content {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
 /* =================
 Logo
 ==================== */
@@ -118,7 +121,7 @@ Logo
 .logo {
   position: fixed;
   z-index: 100;
-  margin: 4em 20%;
+  /*margin: 4em 20%;*/
 }
 
 .logo img {
@@ -221,7 +224,7 @@ intro
 ================================= */
 
 #intro{
-	min-height: 100vh;
+	min-height: 80vh;
 	background-color: #529abb;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -249,13 +252,6 @@ intro
 	letter-spacing: 1px;
 }
 
-.brand {
-	max-width: 80%;
-	margin: auto;
-  font-size: 1.5em;
-  margin: 3em auto;
-}
-
 @media (min-width: 500px) {
   .intro-text {
   	margin-top: 250px;
@@ -266,16 +262,11 @@ intro
 about
 ================================= */
 
-.about_text {
-	column-count: 1;
-}
-
 @media (min-width: 800px) {
   .home-section p {
     font-size: 1.5em;
   }
   .about_text {
-  	column-count: 2;
     text-align: left;
     width: 100%;
   }
@@ -327,6 +318,7 @@ news
 support us
 ================================= */
 ul.social-network {
+	text-align: center;
 	margin: 0;
 	margin-left:0;
 	padding-left: 0;
