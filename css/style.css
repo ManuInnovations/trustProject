@@ -19,7 +19,7 @@ imports
 ================================= */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800);
 @import url('font-awesome.min.css');
-@import url('overwrite.css');
+/*@import url('overwrite.css');*/
 @import url('dlmenu.css');
 @import url('animate.css');
 
@@ -37,12 +37,15 @@ body{
 
 ul {
 	text-align: left;
+<<<<<<< HEAD
 }
 
 ol {
 	text-align: left;
 
 
+=======
+>>>>>>> 01d72d36b24268bb417dfce5b2e499778dd85b57
 }
 
 button {
