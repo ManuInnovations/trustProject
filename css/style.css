@@ -116,7 +116,7 @@ Logo
 .logo {
   position: fixed;
   z-index: 100;
-  margin: 4em 20%;
+  /*margin: 4em 20%;*/
 }
 
 .logo img {
@@ -247,13 +247,6 @@ intro
 	letter-spacing: 1px;
 }
 
-.brand {
-	max-width: 80%;
-	margin: auto;
-  font-size: 1.5em;
-  margin: 3em auto;
-}
-
 @media (min-width: 500px) {
   .intro-text {
   	margin-top: 250px;
@@ -264,16 +257,11 @@ intro
 about
 ================================= */
 
-.about_text {
-	column-count: 1;
-}
-
 @media (min-width: 800px) {
   .home-section p {
     font-size: 1.5em;
   }
   .about_text {
-  	column-count: 2;
     text-align: left;
     width: 100%;
   }
