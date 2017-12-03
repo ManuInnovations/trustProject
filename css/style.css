@@ -19,7 +19,7 @@ imports
 ================================= */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800);
 @import url('font-awesome.min.css');
-@import url('overwrite.css');
+/*@import url('overwrite.css');*/
 @import url('dlmenu.css');
 @import url('animate.css');
 
@@ -33,6 +33,10 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	line-height: 1.6em;
+}
+
+ul {
+	text-align: left;
 }
 
 button {
