@@ -126,14 +126,6 @@ intro
   margin-bottom: 100px;
 }
 
-.line-spacer {
-	width: 30%;
-	margin:0 auto;
-	margin-top: 20px;
-	margin-bottom: 25px;
-	border-bottom:1px solid #fff;
-}
-
 .intro-text p span {
 	color:#fff;
 	text-align:center;
@@ -209,11 +201,11 @@ about
 
 @media (min-width: 800px) {
   .home-section p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .about_text {
-    text-align: left;
     width: 100%;
+    text-align: left;
   }
 }
 
