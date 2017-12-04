@@ -2,10 +2,9 @@
 /*
 imports
 general
-margin, padding
-sections
-spacers
+logo
 intro
+sections
 about
 submissions
 carousel
@@ -13,6 +12,7 @@ story
 legal resources
 support us
 footer
+spacers
 
 /* ================================
 imports
@@ -81,6 +81,88 @@ a, a:visited, a:hover {
   color: white;
 }
 
+/* =================
+logo
+==================== */
+
+.logo img {
+  width: 250px;
+	/*margin-top: 20px;*/
+  margin: auto;
+	padding: 10px 10px 80px;
+}
+
+@media (min-width: 500px) {
+  .logo img {
+    width: 300px;
+  }
+}
+
+/* ================================
+intro
+================================= */
+
+#intro{
+	min-height: 100vh;
+	background-color: #529abb;
+	background-position:center;
+	background-repeat:no-repeat;
+	overflow-y:hidden;
+	text-align:center;
+	position:relative;
+  display: flex;
+}
+
+.intro-text {
+  margin: 50px auto 0;
+  font-size: 1.2em;
+}
+
+.intro i {
+  width: 100px;
+}
+
+.story-quote {
+  margin-bottom: 100px;
+}
+
+.line-spacer {
+	width: 30%;
+	margin:0 auto;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	border-bottom:1px solid #fff;
+}
+
+.intro-text p span {
+	color:#fff;
+	text-align:center;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
+}
+
+@media (min-width: 500px) {
+  .intro-text {
+  	margin-top: 50px;
+  }
+  .intro-text p span {
+    font-size: 1.3em;
+  }
+  .story-quote {
+    margin-bottom: 200px;
+  }
+}
+@media (min-width: 700px) {
+  .intro-text {
+  	margin-top: 100px;
+  }
+}
+@media (min-width: 1000px) {
+  .intro-text {
+  	margin-top: 150px;
+  }
+}
+
 /* ================================
 sections
 ================================= */
@@ -116,155 +198,6 @@ sections
   padding: 0 30px 0;
 }
 
-/* =================
-Logo
-==================== */
-
-.logo img {
-  width: 250px;
-	/*margin-top: 20px;*/
-  margin: auto;
-	padding: 10px 10px 80px;
-}
-
-@media (min-width: 500px) {
-  .logo {
-    margin: 3em 25%;
-  }
-  .logo img {
-    width: 300px;
-  }
-}
-@media (min-width: 800px) {
-  .logo {
-    margin: 3em 30%;
-  }
-}
-@media (min-width: 1000px) {
-  .logo {
-    margin: 3em 35%;
-  }
-}
-@media (min-width: 1200px) {
-  .logo {
-    margin: 3em 40%;
-  }
-}
-/* ==========================
-spacers
-============================= */
-
-#spacer1{
-	background-image: url(../img/spacer/rooftops-sm.jpg);
-	background-repeat: no-repeat;
-  background-size: cover;
-	font-family: 'Open Sans', sans-serif;
-	font-style: oblique;
-  font-weight: bold;
-	color: black;
-	letter-spacing: 1px;
-	text-align: left;
-}
-
-#spacer2{
-	background-image: url(../img/spacer/whanau-sm.jpg);
-	background-repeat: no-repeat;
-  background-size: cover;
-	font-family: 'Architects Daughter', cursive;
-	letter-spacing: 1px;
-}
-
-#spacer3{
-	background-image: url(../img/spacer/jandals-sm.jpg);
-	background-repeat: no-repeat;
-  background-size: cover;
-	font-family: 'Architects Daughter', cursive;
-	letter-spacing: 1px;
-}
-
-#spacer4{
-	background-image: url(../img/spacer/wharf-sm.jpg);
-	background-repeat: no-repeat;
-  background-size: cover;
-	font-family: 'Architects Daughter', cursive;
-	letter-spacing: 1px;
-}
-
-.spacer p {
-	color: black;
-}
-
-@media (min-width:768px) {
-	#spacer1{
-		background-image: url(../img/spacer/rooftops.png);
-		width: 100%;
-	}
-	#spacer2{
-		background-image: url(../img/spacer/whanau.png);
-		width: 100%;
-	}
-	#spacer3{
-		background-image: url(../img/spacer/jandals.png);
-		width: 100%;
-	}
-  #spacer4{
-  	background-image: url(../img/spacer/wharf-lg.jpg);
-  }
-}
-
-
-/* ================================
-intro
-================================= */
-
-#intro{
-	min-height: 100vh;
-	background-color: #529abb;
-	background-position:center;
-	background-repeat:no-repeat;
-	overflow-y:hidden;
-	text-align:center;
-	position:relative;
-  display: flex;
-}
-
-
-.intro-text {
-	margin-top:50px;
-  font-size: 1.2em;
-}
-
-.intro i {
-  width: 100px;
-}
-
-.story-quote {
-  margin-bottom: 100px;
-}
-
-.line-spacer {
-	width: 30%;
-	margin:0 auto;
-	margin-top: 20px;
-	margin-bottom: 25px;
-	border-bottom:1px solid #fff;
-}
-
-.intro-text p span {
-	color:#fff;
-	text-align:center;
-	font-family: 'Architects Daughter', cursive;
-	letter-spacing: 1px;
-}
-
-@media (min-width: 500px) {
-  .intro-text {
-  	margin-top: 250px;
-  }
-  .intro-text p span {
-    font-size: 1.5em;
-  }
-}
 
 /* ================================
 about
@@ -357,4 +290,66 @@ footer {
 	background: #2b2b2b;
 	color: #ddd;
 	padding: 50px 0 30px;
+}
+
+/* ==========================
+spacers
+============================= */
+
+#spacer1{
+	background-image: url(../img/spacer/rooftops-sm.jpg);
+	background-repeat: no-repeat;
+  background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+	font-style: oblique;
+  font-weight: bold;
+	color: black;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+#spacer2{
+	background-image: url(../img/spacer/whanau-sm.jpg);
+	background-repeat: no-repeat;
+  background-size: cover;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
+}
+
+#spacer3{
+	background-image: url(../img/spacer/jandals-sm.jpg);
+	background-repeat: no-repeat;
+  background-size: cover;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
+}
+
+#spacer4{
+	background-image: url(../img/spacer/wharf-sm.jpg);
+	background-repeat: no-repeat;
+  background-size: cover;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
+}
+
+.spacer p {
+	color: black;
+}
+
+@media (min-width:768px) {
+	#spacer1{
+		background-image: url(../img/spacer/rooftops.png);
+		width: 100%;
+	}
+	#spacer2{
+		background-image: url(../img/spacer/whanau.png);
+		width: 100%;
+	}
+	#spacer3{
+		background-image: url(../img/spacer/jandals.png);
+		width: 100%;
+	}
+  #spacer4{
+  	background-image: url(../img/spacer/wharf-lg.jpg);
+  }
 }
