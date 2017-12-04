@@ -87,6 +87,7 @@ sections
 
 .home-section {
 	padding: 50px 0px 100px 0px;
+  margin: auto;
 }
 
 /* --- heading --- */
@@ -112,23 +113,21 @@ sections
 .section-content {
 	margin-top: 30px;
 	margin-bottom: 20px;
+  padding: 0 30px 0;
 }
 
 /* =================
 Logo
 ==================== */
 
-.logo {
-  position: fixed;
-  z-index: 100;
-  /*margin: 4em 20%;*/
-}
-
 .logo img {
   width: 250px;
-	margin-top: 20px;
-	padding: 6px 12px;
+	/*margin-top: 20px;*/
+  margin: auto;
+	padding: 10px 10px 80px;
 }
+
+
 
 @media (min-width: 500px) {
   .logo {
@@ -137,9 +136,6 @@ Logo
   .logo img {
     width: 300px;
   }
-	.intro-text p span {
-		font-size: 1.5em;
-	}
 }
 @media (min-width: 800px) {
   .logo {
@@ -224,17 +220,28 @@ intro
 ================================= */
 
 #intro{
-	min-height: 80vh;
+	min-height: 100vh;
 	background-color: #529abb;
 	background-position:center;
 	background-repeat:no-repeat;
 	overflow-y:hidden;
 	text-align:center;
 	position:relative;
+  display: flex;
 }
 
+
 .intro-text {
-	margin-top:150px;
+	margin-top:50px;
+  font-size: 1.2em;
+}
+
+.intro i {
+  width: 100px;
+}
+
+.story-quote {
+  margin-bottom: 100px;
 }
 
 .line-spacer {
@@ -256,11 +263,18 @@ intro
   .intro-text {
   	margin-top: 250px;
   }
+  .intro-text p span {
+    font-size: 1.5em;
+  }
 }
 
 /* ================================
 about
 ================================= */
+
+.section-content h3 {
+  font-size: 1.2em;
+}
 
 @media (min-width: 800px) {
   .home-section p {
