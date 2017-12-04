@@ -127,8 +127,6 @@ Logo
 	padding: 10px 10px 80px;
 }
 
-
-
 @media (min-width: 500px) {
   .logo {
     margin: 3em 25%;
@@ -318,6 +316,10 @@ legal resources
 
 .resource {
 	margin-bottom: 50px;
+}
+
+.resource h3 {
+  font-size: 1.5em;
 }
 
 /* ================================
