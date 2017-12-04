@@ -2,10 +2,9 @@
 /*
 imports
 general
-margin, padding
-sections
-spacers
+logo
 intro
+sections
 about
 submissions
 carousel
@@ -13,6 +12,7 @@ story
 legal resources
 support us
 footer
+spacers
 
 /* ================================
 imports
@@ -81,12 +81,87 @@ a, a:visited, a:hover {
   color: white;
 }
 
+/* =================
+logo
+==================== */
+
+.logo img {
+  width: 250px;
+	/*margin-top: 20px;*/
+  margin: auto;
+	padding: 10px 10px 80px;
+}
+
+@media (min-width: 500px) {
+  .logo img {
+    width: 300px;
+  }
+}
+
+/* ================================
+intro
+================================= */
+
+#intro{
+	min-height: 100vh;
+	background-color: #529abb;
+	background-position:center;
+	background-repeat:no-repeat;
+	overflow-y:hidden;
+	text-align:center;
+	position:relative;
+  display: flex;
+}
+
+.intro-text {
+  margin: 50px auto 0;
+  font-size: 1.2em;
+}
+
+.intro i {
+  width: 100px;
+}
+
+.story-quote {
+  margin-bottom: 100px;
+}
+
+.intro-text p span {
+	color:#fff;
+	text-align:center;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
+}
+
+@media (min-width: 500px) {
+  .intro-text {
+  	margin-top: 50px;
+  }
+  .intro-text p span {
+    font-size: 1.3em;
+  }
+  .story-quote {
+    margin-bottom: 200px;
+  }
+}
+@media (min-width: 700px) {
+  .intro-text {
+  	margin-top: 100px;
+  }
+}
+@media (min-width: 1000px) {
+  .intro-text {
+  	margin-top: 150px;
+  }
+}
+
 /* ================================
 sections
 ================================= */
 
 .home-section {
 	padding: 50px 0px 100px 0px;
+  margin: auto;
 }
 
 /* --- heading --- */
@@ -112,50 +187,103 @@ sections
 .section-content {
 	margin-top: 30px;
 	margin-bottom: 20px;
+  padding: 0 30px 0;
 }
 
-/* =================
-Logo
-==================== */
 
-.logo {
-  position: fixed;
-  z-index: 100;
-  /*margin: 4em 20%;*/
+/* ================================
+about
+================================= */
+
+.section-content h3 {
+  font-size: 1.2em;
 }
 
-.logo img {
-  width: 250px;
-	margin-top: 20px;
-	padding: 6px 12px;
-}
-
-@media (min-width: 500px) {
-  .logo {
-    margin: 3em 25%;
-  }
-  .logo img {
-    width: 300px;
-  }
-	.intro-text p span {
-		font-size: 1.5em;
-	}
-}
 @media (min-width: 800px) {
-  .logo {
-    margin: 3em 30%;
+  .home-section p {
+    font-size: 1.2em;
+  }
+  .about_text {
+    width: 100%;
+    text-align: left;
   }
 }
-@media (min-width: 1000px) {
-  .logo {
-    margin: 3em 35%;
-  }
+
+/* ================================
+submissions
+================================= */
+
+.submissionBox {
+  border: solid 1px black;
 }
-@media (min-width: 1200px) {
-  .logo {
-    margin: 3em 40%;
-  }
+
+/* ================================
+story
+================================= */
+
+form {
+	max-width: 80%;
+	margin: auto;
 }
+
+.input-group {
+	width: 80%;
+	margin: auto;
+}
+
+.story_text {
+  text-align: left;
+}
+
+/* ================================
+legal resources
+================================= */
+
+.resource {
+	margin-bottom: 50px;
+}
+
+.resource h3 {
+  font-size: 1.5em;
+}
+
+/* ================================
+news
+================================= */
+
+.news {
+	margin-top: -150px;
+}
+
+/* ================================
+support us
+================================= */
+ul.social-network {
+	text-align: center;
+	margin: 0;
+	margin-left:0;
+	padding-left: 0;
+	list-style: none;
+}
+
+ul.social-network li {
+	display: inline;
+	margin: 5px 5px;
+}
+
+ul.social-network li a:hover span .fa-circle {
+	color: #2b2b2b;
+}
+
+/* ================================
+footer
+================================= */
+footer {
+	background: #2b2b2b;
+	color: #ddd;
+	padding: 50px 0 30px;
+}
+
 /* ==========================
 spacers
 ============================= */
@@ -216,129 +344,4 @@ spacers
   #spacer4{
   	background-image: url(../img/spacer/wharf-lg.jpg);
   }
-}
-
-
-/* ================================
-intro
-================================= */
-
-#intro{
-	min-height: 80vh;
-	background-color: #529abb;
-	background-position:center;
-	background-repeat:no-repeat;
-	overflow-y:hidden;
-	text-align:center;
-	position:relative;
-}
-
-.intro-text {
-	margin-top:150px;
-}
-
-.line-spacer {
-	width: 30%;
-	margin:0 auto;
-	margin-top: 20px;
-	margin-bottom: 25px;
-	border-bottom:1px solid #fff;
-}
-
-.intro-text p span {
-	color:#fff;
-	text-align:center;
-	font-family: 'Architects Daughter', cursive;
-	letter-spacing: 1px;
-}
-
-@media (min-width: 500px) {
-  .intro-text {
-  	margin-top: 250px;
-  }
-}
-
-/* ================================
-about
-================================= */
-
-@media (min-width: 800px) {
-  .home-section p {
-    font-size: 1.5em;
-  }
-  .about_text {
-    text-align: left;
-    width: 100%;
-  }
-}
-
-/* ================================
-submissions
-================================= */
-
-.submissionBox {
-  border: solid 1px black;
-}
-
-/* ================================
-story
-================================= */
-
-form {
-	max-width: 80%;
-	margin: auto;
-}
-
-.input-group {
-	width: 80%;
-	margin: auto;
-}
-
-.story_text {
-  text-align: left;
-}
-
-/* ================================
-legal resources
-================================= */
-
-.resource {
-	margin-bottom: 50px;
-}
-
-/* ================================
-news
-================================= */
-
-.news {
-	margin-top: -150px;
-}
-
-/* ================================
-support us
-================================= */
-ul.social-network {
-	text-align: center;
-	margin: 0;
-	margin-left:0;
-	padding-left: 0;
-	list-style: none;
-}
-
-ul.social-network li {
-	display: inline;
-	margin: 5px 5px;
-}
-
-ul.social-network li a:hover span .fa-circle {
-	color: #2b2b2b;
-}
-
-/* ================================
-footer
-================================= */
-footer {
-	background: #2b2b2b;
-	color: #ddd;
-	padding: 50px 0 30px;
 }
