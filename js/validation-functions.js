@@ -10,29 +10,29 @@ $(document).ready(function() {
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            fullName: {
-             message: 'The name is not valid',
-                validators: {
-                    notEmpty: {
-                        message: 'The full name is required and cannot be empty'
-                    },
-                    stringLength: {
-                        min: 1,
-                        max: 60,
-                        message: 'The full name must be more than 1 and less than 60 characters long'
-                    },
-                }
-            },
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'The email address is required and cannot be empty'
-                    },
-                    emailAddress: {
-                        message: 'The email address is not a valid'
-                    }
-                }
-            },
+            // fullName: {
+            //  message: 'The name is not valid',
+            //     validators: {
+            //         notEmpty: {
+            //             message: 'The full name is required and cannot be empty'
+            //         },
+            //         stringLength: {
+            //             min: 1,
+            //             max: 60,
+            //             message: 'The full name must be more than 1 and less than 60 characters long'
+            //         },
+            //     }
+            // },
+            // email: {
+            //     validators: {
+            //         notEmpty: {
+            //             message: 'The email address is required and cannot be empty'
+            //         },
+            //         emailAddress: {
+            //             message: 'The email address is not a valid'
+            //         }
+            //     }
+            // },
             phone: {
                 message: 'Phone is not valid',
                 validators: {
@@ -61,7 +61,7 @@ $(document).ready(function() {
         $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
         var jqxhr = $.post(url, $form.serialize(), function(data) {
             console.log("Success! Data: " + data.statusText);
-            alert('Thank you for sharing your experience. We will get in touch soon.');
+            alert('Thank you for sharing your story.');
             $(location).attr('href',redirectUrl);
         })
             .fail(function(data) {
