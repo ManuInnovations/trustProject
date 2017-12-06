@@ -174,6 +174,10 @@ sections
 	text-transform: uppercase;
 }
 
+.section-heading h3 {
+	margin-bottom: 20px;
+}
+
 .section-heading .heading-line {
 	margin:0 auto;
 	display: block;
@@ -311,8 +315,15 @@ footer {
 /* ==========================
 spacers
 ============================= */
-
 #spacer1{
+	background-image: url(../img/spacer/river-sm.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
+}
+
+#spacer2{
 	background-image: url(../img/spacer/rooftops-sm.jpg);
 	background-repeat: no-repeat;
   background-size: cover;
@@ -324,16 +335,8 @@ spacers
 	text-align: left;
 }
 
-#spacer2{
-	background-image: url(../img/spacer/whanau-sm.jpg);
-	background-repeat: no-repeat;
-  background-size: cover;
-	font-family: 'Architects Daughter', cursive;
-	letter-spacing: 1px;
-}
-
 #spacer3{
-	background-image: url(../img/spacer/jandals-sm.jpg);
+	background-image: url(../img/spacer/whanau-sm.jpg);
 	background-repeat: no-repeat;
   background-size: cover;
 	font-family: 'Architects Daughter', cursive;
@@ -348,24 +351,35 @@ spacers
 	letter-spacing: 1px;
 }
 
+#spacer5{
+	background-image: url(../img/spacer/clouds-sm.png);
+	background-repeat: no-repeat;
+  background-size: cover;
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: 1px;
+}
+
 .spacer p {
 	color: black;
 }
 
 @media (min-width:768px) {
 	#spacer1{
-		background-image: url(../img/spacer/rooftops.png);
+		background-image: url(../img/spacer/river-lg.png);
 		width: 100%;
 	}
 	#spacer2{
-		background-image: url(../img/spacer/whanau.png);
+		background-image: url(../img/spacer/rooftops.png);
 		width: 100%;
 	}
 	#spacer3{
-		background-image: url(../img/spacer/jandals.png);
+		background-image: url(../img/spacer/whanau.png);
 		width: 100%;
 	}
   #spacer4{
   	background-image: url(../img/spacer/wharf-lg.jpg);
   }
+	#spacer5{
+		background-image: url(../img/spacer/clouds-lg.png);
+	}
 }
