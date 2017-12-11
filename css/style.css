@@ -194,11 +194,6 @@ sections
   padding: 0 30px 0;
 }
 
-.section-content a {
-  color: blue;
-}
-
-
 /* ================================
 about
 ================================= */
@@ -290,7 +285,7 @@ ul.social-network {
 	text-align: center;
 	margin: 0;
 	margin-left:0;
-	padding-left: 0;
+	padding: 10px 0 20px ;
 	list-style: none;
 }
 
