@@ -164,6 +164,11 @@ intro
   	margin-top: 150px;
   }
 }
+@media (min-width: 1500px) {
+  .intro-text {
+  	max-width: 50%;
+  }
+}
 
 /* ================================
 sections
