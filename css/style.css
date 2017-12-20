@@ -199,6 +199,10 @@ about
   font-size: 1.2em;
 }
 
+.about_text {
+  text-align: center;
+}
+
 @media (min-width: 800px) {
   .home-section p {
     font-size: 1.2em;
