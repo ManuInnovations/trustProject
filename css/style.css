@@ -113,10 +113,17 @@ intro
 .intro-text {
   margin: 50px auto 0;
   font-size: 1.2em;
+	max-width: 80%;
+}
+
+.home-container {
+	height: calc(100vh - 150px);
+	padding: 2em;
 }
 
 .intro i {
   width: 100px;
+	align-items: flex-end;
 }
 
 .story-quote {
@@ -142,13 +149,24 @@ intro
   }
 }
 @media (min-width: 700px) {
+	.home-container {
+		height: calc(100vh - 200px);
+	}
   .intro-text {
   	margin-top: 100px;
   }
 }
 @media (min-width: 1000px) {
+	.home-container {
+		height: calc(100vh - 250px);
+	}
   .intro-text {
   	margin-top: 150px;
+  }
+}
+@media (min-width: 1500px) {
+  .intro-text {
+  	max-width: 50%;
   }
 }
 
